@@ -161,6 +161,27 @@ h1 {
 
 .section { padding-block: var(--section-gap); }
 .section-intro { max-width: 590px; }
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 450ms cubic-bezier(.23, 1, .32, 1), transform 450ms cubic-bezier(.23, 1, .32, 1);
+}
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.js .reveal-list > .reveal:nth-child(2) { transition-delay: 60ms; }
+.js .reveal-list > .reveal:nth-child(3) { transition-delay: 120ms; }
+.js .reveal-list > .reveal:nth-child(4) { transition-delay: 180ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    transform: none;
+    transition: opacity 150ms ease;
+  }
+}
+
 h2 {
   font-size: clamp(42px, 5.8vw, 78px);
   letter-spacing: -.04em;

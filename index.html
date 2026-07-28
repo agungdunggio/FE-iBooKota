@@ -6,6 +6,7 @@
   <meta name="description" content="Book an internal meeting room through one WhatsApp conversation with iBooKota.">
   <title>iBooKota — Book a meeting room in WhatsApp</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header container">
@@ -40,23 +41,23 @@
       </div>
     </section>
 
-    <section class="section container" id="how-it-works" aria-labelledby="process-title">
-      <div class="section-intro">
+    <section class="section container reveal-group" id="how-it-works" aria-labelledby="process-title">
+      <div class="section-intro reveal">
         <p class="eyebrow">The simple version</p>
         <h2 id="process-title">Ask once. Keep moving.</h2>
       </div>
-      <ol class="steps">
-        <li class="step">
+      <ol class="steps reveal-list">
+        <li class="step reveal">
           <span class="step-number">01</span>
           <h3>Ask</h3>
           <p>Send a WhatsApp message describing your meeting.</p>
         </li>
-        <li class="step">
+        <li class="step reveal">
           <span class="step-number">02</span>
           <h3>Check</h3>
           <p>iBooKota’s AI finds available rooms and times.</p>
         </li>
-        <li class="step">
+        <li class="step reveal">
           <span class="step-number">03</span>
           <h3>Confirm</h3>
           <p>Your booking is recorded and synced with Google Calendar.</p>
@@ -64,47 +65,47 @@
       </ol>
     </section>
 
-    <section class="section section-split container" aria-labelledby="conversation-title">
-      <div class="section-intro">
+    <section class="section section-split container reveal-group" aria-labelledby="conversation-title">
+      <div class="section-intro reveal">
         <p class="eyebrow">Natural language, no new system</p>
         <h2 id="conversation-title">A booking conversation.</h2>
       </div>
-      <ol class="conversation" aria-label="Example iBooKota booking conversation">
-        <li><span>Employee</span><p>I need a room for six people tomorrow at 2 PM.</p></li>
-        <li><span>iBooKota</span><p>Room Merapi is available from 2–3 PM. Should I book it?</p></li>
-        <li><span>Employee</span><p>Yes.</p></li>
-        <li><span>iBooKota</span><p>Booked. The event is on Google Calendar.</p></li>
+      <ol class="conversation reveal-list" aria-label="Example iBooKota booking conversation">
+        <li class="reveal"><span>Employee</span><p>I need a room for six people tomorrow at 2 PM.</p></li>
+        <li class="reveal"><span>iBooKota</span><p>Room Merapi is available from 2–3 PM. Should I book it?</p></li>
+        <li class="reveal"><span>Employee</span><p>Yes.</p></li>
+        <li class="reveal"><span>iBooKota</span><p>Booked. The event is on Google Calendar.</p></li>
       </ol>
     </section>
 
-    <section class="section container" aria-labelledby="benefits-title">
-      <div class="section-intro">
+    <section class="section container reveal-group" aria-labelledby="benefits-title">
+      <div class="section-intro reveal">
         <p class="eyebrow">Why iBooKota</p>
         <h2 id="benefits-title">Your workplace has the answer. Just ask.</h2>
       </div>
-      <ul class="benefits">
-        <li>No new booking system to learn.</li>
-        <li>Ask questions in natural language.</li>
-        <li>Fewer scheduling conflicts.</li>
-        <li>Booking records stay up to date.</li>
+      <ul class="benefits reveal-list">
+        <li class="reveal">No new booking system to learn.</li>
+        <li class="reveal">Ask questions in natural language.</li>
+        <li class="reveal">Fewer scheduling conflicts.</li>
+        <li class="reveal">Booking records stay up to date.</li>
       </ul>
     </section>
 
-    <section class="section section-split container" aria-labelledby="sync-title">
-      <div class="section-intro">
+    <section class="section section-split container reveal-group" aria-labelledby="sync-title">
+      <div class="section-intro reveal">
         <p class="eyebrow">One conversation, connected records</p>
         <h2 id="sync-title">Everything stays in sync.</h2>
       </div>
-      <ul class="integrations">
-        <li><strong>WhatsApp</strong><span>for conversation.</span></li>
-        <li><strong>AI</strong><span>for understanding.</span></li>
-        <li><strong>Database</strong><span>for reliable records.</span></li>
-        <li><strong>Google Calendar</strong><span>for shared visibility.</span></li>
+      <ul class="integrations reveal-list">
+        <li class="reveal"><strong>WhatsApp</strong><span>for conversation.</span></li>
+        <li class="reveal"><strong>AI</strong><span>for understanding.</span></li>
+        <li class="reveal"><strong>Database</strong><span>for reliable records.</span></li>
+        <li class="reveal"><strong>Google Calendar</strong><span>for shared visibility.</span></li>
       </ul>
     </section>
 
-    <section class="section faq-section container" aria-labelledby="faq-title">
-      <div class="section-intro">
+    <section class="section faq-section container reveal-group" aria-labelledby="faq-title">
+      <div class="section-intro reveal">
         <p class="eyebrow">Before you ask</p>
         <h2 id="faq-title">Questions, answered.</h2>
       </div>
@@ -132,10 +133,10 @@
       </div>
     </section>
 
-    <section class="closing container" aria-labelledby="closing-title">
-      <p class="eyebrow">Make room for good work</p>
-      <h2 id="closing-title">Ready to book a room?</h2>
-      <a class="button" href="https://wa.me/6281234567890">Book via WhatsApp</a>
+    <section class="closing container reveal-group" aria-labelledby="closing-title">
+      <p class="eyebrow reveal">Make room for good work</p>
+      <h2 class="reveal" id="closing-title">Ready to book a room?</h2>
+      <a class="button reveal" href="https://wa.me/6281234567890">Book via WhatsApp</a>
     </section>
   </main>
 
