@@ -257,7 +257,20 @@ h3 { font-size: 27px; line-height: 1; }
 
 .faq-section { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); gap: clamp(40px, 9vw, 150px); }
 .faq-list { border-top: 1px solid #292929; }
-details { border-bottom: 1px solid #292929; }
+details {
+  border-bottom: 1px solid #292929;
+}
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 240ms cubic-bezier(.23, 1, .32, 1), opacity 180ms ease-out;
+}
+.faq-answer > div { overflow: hidden; }
+details[open] .faq-answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
 summary {
   display: flex;
   cursor: pointer;
@@ -306,6 +319,7 @@ details p { max-width: 560px; margin: -8px 40px 24px 0; color: var(--color-silve
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .constellation { animation-duration: 20s; }
+  .faq-answer { transition-duration: .01ms; }
   *, *::before, *::after {
     animation-duration: .01ms;
     animation-iteration-count: 1;
